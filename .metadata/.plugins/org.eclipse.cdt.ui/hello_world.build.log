@@ -1,0 +1,195 @@
+04:04:38 **** Incremental Build of configuration Default for project hello_world ****
+make all 
+including /home/vc/esp/esp-idf/components/bootloader/Makefile.projbuild...
+including /home/vc/esp/esp-idf/components/bootloader_support/Makefile.projbuild...
+including /home/vc/esp/esp-idf/components/coap/Makefile.projbuild...
+including /home/vc/esp/esp-idf/components/esp32/Makefile.projbuild...
+including /home/vc/esp/esp-idf/components/esptool_py/Makefile.projbuild...
+including /home/vc/esp/esp-idf/components/mbedtls/Makefile.projbuild...
+including /home/vc/esp/esp-idf/components/nghttp/Makefile.projbuild...
+including /home/vc/esp/esp-idf/components/partition_table/Makefile.projbuild...
+including /home/vc/esp/esp-idf/components/ulp/Makefile.projbuild...
+make -C /home/vc/esp/esp-idf/components/bootloader/src V=1 BUILD_DIR_BASE=/home/vc/esp/esp-idf/examples/get-started/hello_world/build/bootloader TEST_COMPONENTS= TESTS_ALL= /home/vc/esp/esp-idf/examples/get-started/hello_world/build/bootloader/bootloader.bin
+make[1]: Entering directory '/home/vc/esp/esp-idf/components/bootloader/src'
+including /home/vc/esp/esp-idf/components/esptool_py/Makefile.projbuild...
+including /home/vc/esp/esp-idf/components/bootloader/Makefile.projbuild...
+including /home/vc/esp/esp-idf/components/bootloader_support/Makefile.projbuild...
+including /home/vc/esp/esp-idf/components/bootloader/src/main/Makefile.projbuild...
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/bootloader/bootloader_support -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/bootloader_support/component.mk COMPONENT_NAME=bootloader_support build
+make[2]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/bootloader/bootloader_support'
+make[2]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/bootloader/bootloader_support'
+Target 'bootloader_support-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/bootloader/bootloader_support/libbootloader_support.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/bootloader/log -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/log/component.mk COMPONENT_NAME=log build
+make[2]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/bootloader/log'
+make[2]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/bootloader/log'
+Target 'log-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/bootloader/log/liblog.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/bootloader/spi_flash -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/spi_flash/component.mk COMPONENT_NAME=spi_flash build
+make[2]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/bootloader/spi_flash'
+make[2]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/bootloader/spi_flash'
+Target 'spi_flash-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/bootloader/spi_flash/libspi_flash.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/bootloader/micro-ecc -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/micro-ecc/component.mk COMPONENT_NAME=micro-ecc build
+make[2]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/bootloader/micro-ecc'
+make[2]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/bootloader/micro-ecc'
+Target 'micro-ecc-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/bootloader/micro-ecc/libmicro-ecc.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/bootloader/soc -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/soc/component.mk COMPONENT_NAME=soc build
+make[2]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/bootloader/soc'
+make[2]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/bootloader/soc'
+Target 'soc-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/bootloader/soc/libsoc.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/bootloader/main -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/bootloader/src/main/component.mk COMPONENT_NAME=main build
+make[2]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/bootloader/main'
+make[2]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/bootloader/main'
+Target 'main-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/bootloader/main/libmain.a'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/components/bootloader/src'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/app_trace -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/app_trace/component.mk COMPONENT_NAME=app_trace build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/app_trace'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/app_trace'
+Target 'app_trace-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/app_trace/libapp_trace.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/app_update -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/app_update/component.mk COMPONENT_NAME=app_update build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/app_update'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/app_update'
+Target 'app_update-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/app_update/libapp_update.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/bootloader_support -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/bootloader_support/component.mk COMPONENT_NAME=bootloader_support build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/bootloader_support'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/bootloader_support'
+Target 'bootloader_support-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/bootloader_support/libbootloader_support.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/bt -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/bt/component.mk COMPONENT_NAME=bt build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/bt'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/bt'
+Target 'bt-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/bt/libbt.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/coap -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/coap/component.mk COMPONENT_NAME=coap build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/coap'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/coap'
+Target 'coap-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/coap/libcoap.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/cxx -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/cxx/component.mk COMPONENT_NAME=cxx build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/cxx'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/cxx'
+Target 'cxx-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/cxx/libcxx.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/driver -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/driver/component.mk COMPONENT_NAME=driver build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/driver'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/driver'
+Target 'driver-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/driver/libdriver.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/esp32 -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/esp32/component.mk COMPONENT_NAME=esp32 build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/esp32'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/esp32'
+Target 'esp32-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/esp32/libesp32.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/ethernet -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/ethernet/component.mk COMPONENT_NAME=ethernet build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/ethernet'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/ethernet'
+Target 'ethernet-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/ethernet/libethernet.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/expat -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/expat/component.mk COMPONENT_NAME=expat build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/expat'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/expat'
+Target 'expat-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/expat/libexpat.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/fatfs -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/fatfs/component.mk COMPONENT_NAME=fatfs build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/fatfs'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/fatfs'
+Target 'fatfs-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/fatfs/libfatfs.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/freertos -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/freertos/component.mk COMPONENT_NAME=freertos build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/freertos'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/freertos'
+Target 'freertos-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/freertos/libfreertos.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/heap -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/heap/component.mk COMPONENT_NAME=heap build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/heap'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/heap'
+Target 'heap-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/heap/libheap.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/jsmn -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/jsmn/component.mk COMPONENT_NAME=jsmn build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/jsmn'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/jsmn'
+Target 'jsmn-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/jsmn/libjsmn.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/json -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/json/component.mk COMPONENT_NAME=json build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/json'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/json'
+Target 'json-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/json/libjson.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/libsodium -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/libsodium/component.mk COMPONENT_NAME=libsodium build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/libsodium'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/libsodium'
+Target 'libsodium-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/libsodium/liblibsodium.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/log -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/log/component.mk COMPONENT_NAME=log build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/log'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/log'
+Target 'log-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/log/liblog.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/lwip -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/lwip/component.mk COMPONENT_NAME=lwip build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/lwip'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/lwip'
+Target 'lwip-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/lwip/liblwip.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/mbedtls -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/mbedtls/component.mk COMPONENT_NAME=mbedtls build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/mbedtls'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/mbedtls'
+Target 'mbedtls-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/mbedtls/libmbedtls.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/mdns -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/mdns/component.mk COMPONENT_NAME=mdns build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/mdns'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/mdns'
+Target 'mdns-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/mdns/libmdns.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/micro-ecc -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/micro-ecc/component.mk COMPONENT_NAME=micro-ecc build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/micro-ecc'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/micro-ecc'
+Target 'micro-ecc-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/micro-ecc/libmicro-ecc.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/newlib -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/newlib/component.mk COMPONENT_NAME=newlib build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/newlib'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/newlib'
+Target 'newlib-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/newlib/libnewlib.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/nghttp -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/nghttp/component.mk COMPONENT_NAME=nghttp build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/nghttp'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/nghttp'
+Target 'nghttp-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/nghttp/libnghttp.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/nvs_flash -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/nvs_flash/component.mk COMPONENT_NAME=nvs_flash build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/nvs_flash'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/nvs_flash'
+Target 'nvs_flash-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/nvs_flash/libnvs_flash.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/openssl -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/openssl/component.mk COMPONENT_NAME=openssl build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/openssl'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/openssl'
+Target 'openssl-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/openssl/libopenssl.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/sdmmc -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/sdmmc/component.mk COMPONENT_NAME=sdmmc build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/sdmmc'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/sdmmc'
+Target 'sdmmc-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/sdmmc/libsdmmc.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/soc -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/soc/component.mk COMPONENT_NAME=soc build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/soc'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/soc'
+Target 'soc-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/soc/libsoc.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/spi_flash -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/spi_flash/component.mk COMPONENT_NAME=spi_flash build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/spi_flash'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/spi_flash'
+Target 'spi_flash-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/spi_flash/libspi_flash.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/tcpip_adapter -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/tcpip_adapter/component.mk COMPONENT_NAME=tcpip_adapter build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/tcpip_adapter'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/tcpip_adapter'
+Target 'tcpip_adapter-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/tcpip_adapter/libtcpip_adapter.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/ulp -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/ulp/component.mk COMPONENT_NAME=ulp build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/ulp'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/ulp'
+Target 'ulp-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/ulp/libulp.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/vfs -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/vfs/component.mk COMPONENT_NAME=vfs build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/vfs'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/vfs'
+Target 'vfs-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/vfs/libvfs.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/wear_levelling -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/wear_levelling/component.mk COMPONENT_NAME=wear_levelling build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/wear_levelling'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/wear_levelling'
+Target 'wear_levelling-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/wear_levelling/libwear_levelling.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/wpa_supplicant -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/wpa_supplicant/component.mk COMPONENT_NAME=wpa_supplicant build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/wpa_supplicant'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/wpa_supplicant'
+Target 'wpa_supplicant-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/wpa_supplicant/libwpa_supplicant.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/xtensa-debug-module -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/components/xtensa-debug-module/component.mk COMPONENT_NAME=xtensa-debug-module build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/xtensa-debug-module'
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/xtensa-debug-module'
+Target 'xtensa-debug-module-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/xtensa-debug-module/libxtensa-debug-module.a'
+make -C /home/vc/esp/esp-idf/examples/get-started/hello_world/build/main -f /home/vc/esp/esp-idf/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/vc/esp/esp-idf/examples/get-started/hello_world/main/component.mk COMPONENT_NAME=main build
+make[1]: Entering directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/main'
+xtensa-esp32-elf-gcc -std=gnu99 -Og -ggdb -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -mlongcalls -nostdlib -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-but-set-variable -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-old-style-declaration -DWITH_POSIX -DMBEDTLS_CONFIG_FILE='"mbedtls/esp_config.h"' -DHAVE_CONFIG_H -DESP_PLATFORM -D IDF_VER=\"v3.0-dev-114-g4ec2abb-dirty\" -MMD -MP   -I /home/vc/esp/esp-idf/examples/get-started/hello_world/main/include -I /home/vc/esp/esp-idf/components/app_trace/include -I /home/vc/esp/esp-idf/components/app_update/include -I /home/vc/esp/esp-idf/components/bootloader_support/include -I /home/vc/esp/esp-idf/components/bt/include -I /home/vc/esp/esp-idf/components/coap/port/include -I /home/vc/esp/esp-idf/components/coap/port/include/coap -I /home/vc/esp/esp-idf/components/coap/libcoap/include -I /home/vc/esp/esp-idf/components/coap/libcoap/include/coap -I /home/vc/esp/esp-idf/components/cxx/include -I /home/vc/esp/esp-idf/components/driver/include -I /home/vc/esp/esp-idf/components/esp32/include -I /home/vc/esp/esp-idf/components/ethernet/include -I /home/vc/esp/esp-idf/components/expat/port/include -I /home/vc/esp/esp-idf/components/expat/include/expat -I /home/vc/esp/esp-idf/components/fatfs/src -I /home/vc/esp/esp-idf/components/freertos/include -I /home/vc/esp/esp-idf/components/heap/include -I /home/vc/esp/esp-idf/components/jsmn/include/ -I /home/vc/esp/esp-idf/components/json/include -I /home/vc/esp/esp-idf/components/json/port/include -I /home/vc/esp/esp-idf/components/libsodium/libsodium/src/libsodium/include -I /home/vc/esp/esp-idf/components/libsodium/port_include -I /home/vc/esp/esp-idf/components/log/include -I /home/vc/esp/esp-idf/components/lwip/include/lwip -I /home/vc/esp/esp-idf/components/lwip/include/lwip/port -I /home/vc/esp/esp-idf/components/lwip/include/lwip/posix -I /home/vc/esp/esp-idf/components/lwip/apps/ping -I /home/vc/esp/esp-idf/components/mbedtls/port/include -I /home/vc/esp/esp-idf/components/mbedtls/include -I /home/vc/esp/esp-idf/components/mdns/include -I /home/vc/esp/esp-idf/components/micro-ecc/micro-ecc -I /home/vc/esp/esp-idf/components/newlib/platform_include -I /home/vc/esp/esp-idf/components/newlib/include -I /home/vc/esp/esp-idf/components/nghttp/port/include -I /home/vc/esp/esp-idf/components/nghttp/nghttp2/lib/includes -I /home/vc/esp/esp-idf/components/nvs_flash/include -I /home/vc/esp/esp-idf/components/openssl/include -I /home/vc/esp/esp-idf/components/sdmmc/include -I /home/vc/esp/esp-idf/components/soc/esp32/include -I /home/vc/esp/esp-idf/components/soc/include -I /home/vc/esp/esp-idf/components/spi_flash/include -I /home/vc/esp/esp-idf/components/tcpip_adapter/include -I /home/vc/esp/esp-idf/components/ulp/include -I /home/vc/esp/esp-idf/components/vfs/include -I /home/vc/esp/esp-idf/components/wear_levelling/include -I /home/vc/esp/esp-idf/components/wpa_supplicant/include -I /home/vc/esp/esp-idf/components/wpa_supplicant/port/include -I /home/vc/esp/esp-idf/components/xtensa-debug-module/include -I /home/vc/esp/esp-idf/examples/get-started/hello_world/build/include  -I. -c /home/vc/esp/esp-idf/examples/get-started/hello_world/main/./hello_world_main.c -o hello_world_main.o
+rm -f libmain.a
+xtensa-esp32-elf-ar cru libmain.a hello_world_main.o
+make[1]: Leaving directory '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/main'
+Target 'main-build' responsible for '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/main/libmain.a'
+xtensa-esp32-elf-gcc -nostdlib -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/app_trace -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/app_update -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/aws_iot -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/bootloader -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/bootloader_support -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/bt -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/coap -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/cxx -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/driver -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/esp32 -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/espcoredump -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/esptool_py -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/ethernet -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/expat -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/fatfs -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/freertos -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/heap -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/idf_test -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/jsmn -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/json -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/libsodium -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/log -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/lwip -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/mbedtls -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/mdns -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/micro-ecc -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/newlib -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/nghttp -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/nvs_flash -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/openssl -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/partition_table -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/sdmmc -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/soc -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/spi_flash -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/tcpip_adapter -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/ulp -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/vfs -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/wear_levelling -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/wpa_supplicant -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/xtensa-debug-module -L/home/vc/esp/esp-idf/examples/get-started/hello_world/build/main -u call_user_start_cpu0  -Wl,--gc-sections -Wl,-static -Wl,--start-group  -lapp_trace  -lapp_update  -lbootloader_support -lbt -lcoap -lcxx -u __cxa_guard_dummy -ldriver -lesp32 /home/vc/esp/esp-idf/components/esp32/libhal.a -L/home/vc/esp/esp-idf/components/esp32/lib -lcore -lrtc -lphy -lcoexist -lnet80211 -lpp -lwpa -lsmartconfig -lcoexist -lwps -lwpa2 -L /home/vc/esp/esp-idf/components/esp32/ld -T esp32_out.ld -T esp32.common.ld -T esp32.rom.ld -T esp32.peripherals.ld -lethernet -lexpat -lfatfs -lfreertos -Wl,--undefined=uxTopUsedPriority -lheap -ljsmn -ljson -llibsodium -llog -llwip -lmbedtls -lmdns -lmicro-ecc /home/vc/esp/esp-idf/components/newlib/lib/libc.a /home/vc/esp/esp-idf/components/newlib/lib/libm.a -lnewlib -lnghttp -lnvs_flash -lopenssl -lsdmmc -lsoc -lspi_flash -ltcpip_adapter -lulp -lvfs -lwear_levelling -lwpa_supplicant -lxtensa-debug-module -lmain -lgcc -lstdc++ -Wl,--end-group -Wl,-EL -o /home/vc/esp/esp-idf/examples/get-started/hello_world/build/hello-world.elf -Wl,-Map=/home/vc/esp/esp-idf/examples/get-started/hello_world/build/hello-world.map
+/home/vc/esp/esp-idf/examples/get-started/hello_world/build/esp32/libesp32.a(cpu_start.o):(.literal.main_task+0xc): undefined reference to `app_main'
+/home/vc/esp/esp-idf/examples/get-started/hello_world/build/esp32/libesp32.a(cpu_start.o): In function `main_task':
+/home/vc/esp/esp-idf/components/esp32/./cpu_start.c:338: undefined reference to `app_main'
+/home/vc/esp/esp-idf//make/project.mk:326: recipe for target '/home/vc/esp/esp-idf/examples/get-started/hello_world/build/hello-world.elf' failed
+collect2: error: ld returned 1 exit status
+make: *** [/home/vc/esp/esp-idf/examples/get-started/hello_world/build/hello-world.elf] Error 1
+
+04:04:50 Build Finished (took 11s.874ms)
+

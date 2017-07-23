@@ -1,0 +1,27 @@
+07:30:57 **** Incremental Build of configuration Default for project helloworld ****
+make all 
+CC hello_world_main.o
+/home/vc/esp/esp-idf/examples/get-started/hello_world/main/./hello_world_main.c: In function 'hello_task':
+/home/vc/esp/esp-idf/examples/get-started/hello_world/main/./hello_world_main.c:24:5: warning: 'system_restart' is deprecated [-Wdeprecated-declarations]
+     system_restart();
+     ^
+In file included from /home/vc/esp/esp-idf/examples/get-started/hello_world/main/./hello_world_main.c:12:0:
+/home/vc/esp/esp-idf/components/esp32/include/esp_system.h:79:6: note: declared here
+ void system_restart(void) __attribute__ ((deprecated, noreturn));
+      ^
+/home/vc/esp/esp-idf/examples/get-started/hello_world/main/./hello_world_main.c: In function 'app_main':
+/home/vc/esp/esp-idf/examples/get-started/hello_world/main/./hello_world_main.c:30:5: warning: 'system_init' is deprecated [-Wdeprecated-declarations]
+     system_init();
+     ^
+In file included from /home/vc/esp/esp-idf/examples/get-started/hello_world/main/./hello_world_main.c:12:0:
+/home/vc/esp/esp-idf/components/esp32/include/esp_system.h:42:6: note: declared here
+ void system_init(void) __attribute__ ((deprecated));
+      ^
+AR libmain.a
+LD hello-world.elf
+esptool.py v2.0.1
+To flash all build output, run 'make flash' or:
+python /home/vc/esp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 115200 --before default_reset --after hard_reset write_flash -z --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 /home/vc/esp/esp-idf/examples/get-started/hello_world/build/bootloader/bootloader.bin 0x10000 /home/vc/esp/esp-idf/examples/get-started/hello_world/build/hello-world.bin 0x8000 /home/vc/esp/esp-idf/examples/get-started/hello_world/build/partitions_singleapp.bin
+
+07:31:00 Build Finished (took 2s.424ms)
+

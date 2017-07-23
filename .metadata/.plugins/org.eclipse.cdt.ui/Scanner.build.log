@@ -1,0 +1,8 @@
+04:07:58 **** Incremental Build of configuration Default for project Scanner ****
+make all 
+make[1]: *** No rule to make target '/home/vc/eclipse-workspace/Scanner/main/./blink.c', needed by 'blink.o'.  Stop.
+/home/vc/esp/esp-idf/make/project.mk:390: recipe for target 'main-build' failed
+make: *** [main-build] Error 2
+
+04:08:01 Build Finished (took 2s.559ms)
+

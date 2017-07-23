@@ -1,0 +1,12 @@
+06:18:33 **** Build of configuration Default for project i2c ****
+make all 
+LD blink.elf
+/home/vc/eclipse-workspace/i2c/build/esp32/libesp32.a(cpu_start.o):(.literal.main_task+0xc): undefined reference to `app_main'
+/home/vc/eclipse-workspace/i2c/build/esp32/libesp32.a(cpu_start.o): In function `main_task':
+/home/vc/esp/esp-idf/make/project.mk:326: recipe for target '/home/vc/eclipse-workspace/i2c/build/blink.elf' failed
+/home/vc/esp/esp-idf/components/esp32/./cpu_start.c:338: undefined reference to `app_main'
+collect2: error: ld returned 1 exit status
+make: *** [/home/vc/eclipse-workspace/i2c/build/blink.elf] Error 1
+
+06:18:35 Build Finished (took 2s.207ms)
+

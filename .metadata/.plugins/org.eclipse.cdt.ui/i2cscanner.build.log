@@ -1,0 +1,6 @@
+03:41:37 **** Build of configuration Default for project i2cscanner ****
+make all 
+make: *** No rule to make target 'all'.  Stop.
+
+03:41:38 Build Finished (took 144ms)
+
