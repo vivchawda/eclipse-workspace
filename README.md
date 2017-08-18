@@ -16,4 +16,14 @@ To use it, you will need to update your PATH environment variable in ~/.profile 
 
 Add to the bottom of the file:
 
-`export PATH=$PATH:$HOME/esp/xtensa-esp32-elf/bin`
+`export PATH=$PATH:$HOME/esp/xtensa-esp32-elf/bin
+export IDF_PATH=~/esp/esp-idf`
+
+Logoff and re-login to apply the PATH variables.
+
+You can use the following commands to check if your shell is reflecting the variables:
+`printenv IDF_PATH
+printenv PATH`
+
+
+
