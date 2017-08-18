@@ -1,4 +1,5 @@
 # Setup ESP-IDF and Eclipse on Linux
+## Install the prerequisites
 
 `sudo apt-get install git wget make libncurses-dev flex bison gperf python python-serial`
 
