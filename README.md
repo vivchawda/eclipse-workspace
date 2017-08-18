@@ -3,6 +3,8 @@
 
 `sudo apt-get install git wget make libncurses-dev flex bison gperf python python-serial`
 
+## Install Xtensa toolchain
+
 For 64-bit Ubuntu:
 
 https://dl.espressif.com/dl/xtensa-esp32-elf-linux64-1.22.0-61-gab8375a-5.2.0.tar.gz
@@ -10,6 +12,8 @@ https://dl.espressif.com/dl/xtensa-esp32-elf-linux64-1.22.0-61-gab8375a-5.2.0.ta
 `mkdir -p ~/esp
 cd ~/esp
 tar -xzf ~/Downloads/xtensa-esp32-elf-linux64-1.22.0-61-gab8375a-5.2.0.tar.gz`
+
+## Update PATH
 
 To use it, you will need to update your PATH environment variable in ~/.profile file.
 
@@ -28,15 +32,21 @@ Logoff and re-login to apply the PATH variables.
 You can use the following commands to check if your shell is reflecting the variables:
 `printenv IDF_PATH && printenv PATH`
 
-TO install ESP-IDF:
+## Installl ESP-IDF
+
+To install ESP-IDF:
 
 `cd ~/esp
 git clone --recursive https://github.com/espressif/esp-idf.git`
+
+## Setup IDF template application
 
 Clone the HelloWorld example project from ESP-IDF folder and use it as a template:
 
 `cd ~/esp
 cp -r $IDF_PATH/examples/get-started/hello_world .`
+
+## Build & Flash the project
 
 To build a project, IDF requires a `sdkconfig` file within the project folder to read all settings from.
 
