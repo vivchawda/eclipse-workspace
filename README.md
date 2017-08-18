@@ -66,4 +66,33 @@ If you encounter any errors while building which mentions Xtensa path being not 
 
 If Xtensa path lists up as a valid PATH and you are still getting PATH related errors, you should try using the 32bit archive for Xtensa toolchain.
 
+## Setup Eclipse for ESP-IDF
 
+### Download Eclipse IDE
+
+Download Eclipse for C/C++ from `https://www.eclipse.org/downloads.` For my Virtual machine, I downloaded 32bit "Oxygen" version.
+
+### Create new project
+
+Right click `Project Explorer` pane on the left, `New > Project`
+
+Clone or copy one of the projects from `$IDF_PATH/examples/` and import as `Makefile Project with Existing Code`
+
+### Set project properties
+
+Right click on the main Project name (folder icon) and open its Properties.
+
+In `C/C++ Build > Environment` add the variable `BATCH_BUILD` with a value of `1`
+
+In the same section add another variable `IDF_PATH` with its value as `${IDF_PATH}`
+
+In `C/C++ General > Preprocessor Include Paths > Providers` find the variable `CDT GCC Build Output Parser` and change Compiler Command pattern to `xtensa-esp32-elf-(g?cc)|([gc]\+\+)|(clang)`
+
+In the same section, for the variable `CDT Cross GCC Built-in Compiler Settings` set Command to get Compiler Spec value to `xtensa-esp32-elf-gcc ${FLAGS} -E -P -v -dD "${INPUTS}"`
+
+### Build and flash the project
+
+Right click Project name and select `Make Targets -> Create` 
+Add two build targets, `all` and `flash`
+
+For successful build, ESP-IDF searches for `sdkconfig` file in the project directory. You can either run `make menuconfig` in the shell to generate the file, or click on the build target `all` twice to generate the file and carry on with the build process (it will give an error first time it is built).
