@@ -22,8 +22,7 @@ export IDF_PATH=~/esp/esp-idf`
 Logoff and re-login to apply the PATH variables.
 
 You can use the following commands to check if your shell is reflecting the variables:
-`printenv IDF_PATH
-printenv PATH`
+`printenv IDF_PATH && printenv PATH`
 
 
 
