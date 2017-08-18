@@ -70,7 +70,7 @@ If Xtensa path lists up as a valid PATH and you are still getting PATH related e
 
 ### Download Eclipse IDE
 
-Download Eclipse for C/C++ from `https://www.eclipse.org/downloads.` For my Virtual machine, I downloaded 32bit "Oxygen" version.
+Download Eclipse for C/C++ from https://www.eclipse.org/downloads. For my Virtual machine, I downloaded 32bit "Oxygen" version.
 
 ### Create new project
 
